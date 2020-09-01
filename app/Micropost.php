@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Task extends Model
+class Micropost extends Model
 {
-     protected $fillable = ['content'];
+    protected $fillable = ['content'];
 
     /**
      * この投稿を所有するユーザ。（ Userモデルとの関係を定義）
@@ -15,5 +15,4 @@ class Task extends Model
     {
         return $this->belongsTo(User::class);
     }
-    
 }
